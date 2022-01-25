@@ -1,0 +1,153 @@
+/******* TOP SIDE  *******/
+
+.description {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #4d4d4d;
+  background-color: #f8f8f8;
+  padding: 0.6rem 2rem 0 2.4rem;
+}
+
+.description--title {
+  display: flex;
+  /* padding: 0.6rem 2rem 0 2.4rem; */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.description--text {
+  list-style: none;
+  /* padding: 0.8rem 4.8rem 1rem 2.4rem; */
+}
+
+/******* BOTTOM SIDE  *******/
+/* UPPER SECTION */
+.details {
+  margin: 0 0.6rem;
+}
+
+.details--upper--section {
+  display: flex;
+  justify-content: space-between;
+  margin: 4rem 1.2rem 0 1.2rem;
+  border-bottom: 1px solid #b1b1b1;
+  padding-bottom: 1.2rem;
+}
+
+.details--title {
+  font-size: 1.8rem;
+  color: #212121;
+  font-weight: 500;
+}
+
+.details--description {
+  font-size: 10px;
+  color: #575757;
+  font-weight: 300;
+}
+
+.logo-placeholder {
+  padding: 2rem 8rem;
+  border: 1px solid black;
+  background-color: rgba(226, 10, 24, 1);
+}
+/* LOWER SECTION */
+
+.details--lower-section {
+  margin: 2rem 1.2rem 0rem 1.2rem;
+}
+
+.plan-recommendations {
+  display: flex;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #5cb025;
+  padding: 0.8rem 0;
+  background: transparent linear-gradient(90deg, #5cb02500 0%, #5cb025cc 100%)
+    0% 0% no-repeat padding-box;
+}
+
+.product {
+  display: flex;
+  border-left: 8px solid #5bb210;
+  align-items: center;
+  margin: 1.8rem 0;
+}
+.t-shirt {
+  max-height: 3.2rem;
+  margin: 0 1rem;
+}
+
+.product--name {
+  font-size: 1.4rem;
+  color: #5cb025;
+  font-weight: 700;
+}
+
+.product--info {
+  font-size: 1.2rem;
+  color: #575756;
+}
+
+.table-details {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+
+  font-size: 1.2rem;
+  color: #212121;
+  border: 1px solid #c1c1c1;
+  overflow: hidden;
+}
+
+td {
+  text-align: center;
+  margin: 0.6rem 1.8rem;
+}
+/* HELPER CLASSES */
+
+.helper--border-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #c1c1c1;
+}
+
+.helper--border-right:last-child {
+  border: none;
+}
+
+.helper--margin-bottom {
+  margin-bottom: 1.8rem;
+}
+.helper--margin-bottom:last-child {
+  margin-bottom: 0;
+}
+
+/***********************************************************/
+/********************* MEDIA QUERY ************************/
+/*********************************************************/
+
+/**************************/
+/* BELOW 960px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 60em) {
+  .description {
+    font-size: 1.6rem;
+  }
+  .details--title {
+    font-size: 1.6rem;
+  }
+  .logo-placeholder {
+    padding: 1.6rem 6.4rem;
+    border: 1px solid black;
+    background-color: rgba(226, 10, 24, 1);
+  }
+  .table-details {
+    font-size: 1.2rem;
+  }
+
+  td {
+    margin: 0.4rem 1.2rem;
+  }
+}

@@ -1,0 +1,152 @@
+section {
+  display: grid;
+  align-content: center;
+  align-items: center;
+  border: 2px solid #969695;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 0 1.6rem;
+}
+
+/************ UPPER ROW *************/
+
+.upper-row {
+  display: flex;
+  font-size: 1.4rem;
+  letter-spacing: 1.06px;
+  /* max-height: 3.6rem; */
+
+  justify-content: left;
+  align-items: center;
+  border-bottom: 1px solid #ccccce;
+}
+
+.growth-icon {
+  margin: 0 0.6rem;
+}
+
+.borders-icon {
+  padding: 0 0.8rem;
+  border-left: 1px solid #161616;
+  border-right: 1px solid #161616;
+}
+
+.plan {
+  display: flex;
+  padding: 0.6rem 0;
+  border-left: 1px solid #ccccce;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.plan-title {
+  margin-left: 0.8rem;
+}
+
+/************ BOTTOM ROW *************/
+.bottom-row {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr 1fr 1fr;
+}
+
+.product {
+  display: flex;
+  background-color: #e9e9e9;
+  border-right: 1px solid #ccccce;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.t-shirt {
+  width: 48px;
+  height: 50px;
+  margin: 0 3rem 0 3.6rem;
+}
+
+.prod--name {
+  font-size: 1.7rem;
+}
+.prod--description {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.prod--description span {
+  font-weight: 300;
+}
+
+.shortage,
+.surplus {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+  border-right: 1px solid #ccccce;
+
+  align-items: center;
+  justify-content: space-between;
+
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.shortage-amount,
+.surpluss-amount {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.revenue-and-gross {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-color: #eef7e7;
+}
+
+.revenue {
+  border-bottom: 1px solid #ccccce;
+}
+.revenue,
+.gross {
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.revenue-amount,
+.gross-amount {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/***********************************************************/
+/********************* MEDIA QUERY ************************/
+/*********************************************************/
+
+/**************************/
+/* BELOW 1200px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 75em) {
+  .t-shirt {
+    width: 38px;
+    height: 40px;
+    margin: 0 1.6rem 0 2.4rem;
+  }
+  .shortage-amount,
+  .surpluss-amount {
+    font-size: 2.2rem;
+    font-weight: 500;
+  }
+  .revenue,
+  .gross {
+    font-size: 1.3rem;
+  }
+
+  .revenue-amount,
+  .gross-amount {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+}

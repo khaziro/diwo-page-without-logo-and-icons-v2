@@ -1,0 +1,21 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border-top: 1px solid #00000045;
+  background-color: #ffffff;
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+
+span {
+  padding: 0.8rem 1rem;
+  background-color: #dc1020;
+  margin: 1rem 0.6rem 0 0.6rem;
+}
+
+span:hover,
+span:active {
+  cursor: pointer;
+  font-weight: 700;
+}

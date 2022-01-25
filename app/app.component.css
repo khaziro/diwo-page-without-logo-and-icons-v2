@@ -1,0 +1,49 @@
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /* overflow: hidden; */
+  width: 100%;
+}
+
+app-aside {
+  border-right: 1px solid #b2b2b2;
+  color: #4d4d4d;
+}
+
+app-main-article {
+  height: 45rem;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.main-section {
+  display: grid;
+  margin: 2.4rem 3.8rem 0 1.6rem;
+  grid-template-columns: 28% 72%;
+  gap: 2.2rem;
+}
+
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+  app-main-article {
+    height: 42rem;
+  }
+}
+
+/**************************/
+/* BELOW 960px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 60em) {
+  app-main-article {
+    height: 35rem;
+  }
+}
+
+/**************************/
+/* BELOW 768px (Tablets) */
+/**************************/

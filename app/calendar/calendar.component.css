@@ -1,0 +1,14 @@
+.calendar {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 1rem 0;
+  padding-right: 1.6rem;
+}
+
+.current-date {
+  font-size: 1.4rem;
+  color: #969695;
+}

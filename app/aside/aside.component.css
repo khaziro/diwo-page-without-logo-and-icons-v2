@@ -1,0 +1,92 @@
+/******** LEFT PANEL ********/
+
+/* SELECTION */
+
+.select-tab {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border-bottom: 1px solid #b2b2b2;
+  overflow: hidden;
+}
+
+.select--active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  padding: 1rem 0;
+  border-bottom: 4px solid #e20613;
+}
+
+.select--inactive {
+  display: flex;
+  padding: 1rem 0;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: 300;
+}
+
+.select:hover,
+.select:active {
+  cursor: pointer;
+}
+
+/* LIST */
+.information {
+  list-style: none;
+}
+
+li {
+  display: flex;
+  padding: 1rem 0;
+  border-bottom: 1px solid #b2b2b2;
+  font-size: 1.6rem;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+li:last-child {
+  border: none;
+}
+
+.list--active {
+  border-bottom: 3px solid #e20613;
+  font-weight: 700;
+}
+
+.list--inactive:hover {
+  font-weight: 500;
+}
+
+.icon {
+  width: 2rem;
+  margin: 0 1.6rem;
+}
+.icon--active {
+  color: #e20613;
+}
+
+.icon--inactive {
+  color: #969695;
+}
+
+/***********************************************************/
+/********************* MEDIA QUERY ************************/
+/*********************************************************/
+
+/**************************/
+/* BELOW 960px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 60em) {
+  .select--active,
+  .select--inactive {
+    font-size: 1.4rem;
+  }
+
+  li {
+    padding: 0.6rem 0;
+    font-size: 1.4rem;
+  }
+}

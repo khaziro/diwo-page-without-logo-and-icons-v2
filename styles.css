@@ -1,0 +1,35 @@
+/* You can add global styles to this file, and also import other style files */
+
+:root {
+  /* Colors: */
+  ---eef7e7: #eef7e7;
+  ---cbddbc: #cbddbc;
+  ---b8db9a: #b8db9a;
+  --modified-value-medium-f9b326: #f9b326;
+  ---5bb210: #5bb210;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+
+  /* There is a better way to implement scroll, I will leave this and do it better if I remember */
+  overflow: hidden;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Yantramanav", sans-serif;
+  max-width: 144rem;
+  margin: auto;
+  background-color: #ffffff;
+}
